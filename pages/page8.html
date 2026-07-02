@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMDEF na Mídia - Clipping Institucional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        .clipping-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .clipping-item {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .clipping-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--verde-petroleo);
+        }
+        .clipping-source {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .clipping-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 0 0 12px 0;
+            line-height: 1.4;
+        }
+        .clipping-desc {
+            font-size: 15px;
+            color: var(--text-sub);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .clipping-link-text {
+            color: var(--verde-petroleo);
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo"><img src="../img/logo.png" alt="Logo AMDEF"></div>
+        <nav class="nav-menu">
+            <a href="../index.html#home">Início</a>
+            <a href="../index.html#sobre">A AMDEF</a>
+            <a href="../index.html#projetos">Projetos</a>
+            <a href="../index.html#beneficios">Benefícios</a>
+            <a href="curriculo.html">Banco de Currículos PcD</a>
+            <a href="../index.html#contato" class="btn-contact-menu">Contato</a>
+        </nav>
+    </header>
+
+    <main style="background-color: var(--bg-main); padding: 20px 0;">
+        <section class="section-padding">
+            <div class="creative-panel" style="max-width: 900px; padding: 60px;">
+                
+                <span class="card-badge" style="background: #e2e8f0; color: #475569;">Comunicação</span>
+                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 800; color: var(--text-main); line-height: 1.2; margin: 15px 0;">AMDEF na Mídia</h1>
+                
+                <p class="text-p" style="margin-bottom: 40px; font-size: 17px; color: #334155;">
+                    Confira o registro histórico e a cobertura da imprensa sobre as principais mobilizações, conquistas e campanhas promovidas pela associação em prol da acessibilidade e inclusão social.
+                </p>
+
+                <div class="clipping-container">
+                    
+                    <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2025/07/26/multa-moral-acao-combate-uso-irregular-de-vagas-de-estacionamento-para-pcds-em-cidade-do-rs-entenda.ghtml" target="_blank" class="clipping-item">
+                        <span class="clipping-source" style="color: #cc0000;">🔴 G1 - Rio Grande do Sul</span>
+                        <h2 class="clipping-title">Ação de ‘multa moral’ coordenada pela Associação alcançou projeção nacional</h2>
+                        <p class="clipping-desc">Iniciativa de conscientização foca no combate ao uso irregular de vagas de estacionamento exclusivas para Pessoas com Deficiência (PcDs) em Farroupilha e serve de modelo para outras regiões do estado.</p>
+                        <span class="clipping-link-text">Ler notícia no portal G1 ↗</span>
+                    </a>
+
+                    <a href="https://miriamcaravaggio.com.br/vozes-pela-inclusao/" target="_blank" class="clipping-item">
+                        <span class="clipping-source" style="color: #0284c7;">📻 Rádio Miriam Caravaggio</span>
+                        <h2 class="clipping-title">Forte articulação com outras entidades PcD no município caracteriza atuação da AMDEF</h2>
+                        <p class="clipping-desc">Reportagem especial destaca o projeto 'Vozes pela Inclusão' e o trabalho integrado que une forças regionais para ampliar os direitos e a visibilidade da causa das pessoas com deficiência física.</p>
+                        <span class="clipping-link-text">Acessar cobertura completa ↗</span>
+                    </a>
+
+                    <a href="../docs/Jornal O Farroupilha (pg. 12), 14.06.2024.pdf" target="_blank" class="clipping-item">
+                        <span class="clipping-source" style="color: #4b5563;">📄 Imprensa Escrita</span>
+                        <h2 class="clipping-title">Registro impresso documenta a evolução histórica das ações institucionais da AMDEF</h2>
+                        <p class="clipping-desc">Publicação veiculada na página 12 da edição de 14 de junho de 2024 do Jornal O Farroupilha detalha o impacto social e os avanços promovidos pela entidade na comunidade.</p>
+                        <span class="clipping-link-text">Abrir Jornal Digital (PDF) ↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 AMDEF - Associação Municipal de Deficientes Físicos de Farroupilha - RS</p>
+    </footer>
+
+</body>
+</html>
