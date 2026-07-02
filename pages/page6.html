@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romaria PcD a Caravaggio: fé e afirmação da causa em pauta - AMDEF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        .carousel-container { max-width: 800px; margin: 40px auto; position: relative; overflow: hidden; border-radius: 16px; box-shadow: var(--shadow-card); background: #000; }
+        .carousel-track { display: flex; transition: transform 0.4s ease-in-out; }
+        .carousel-slide { min-width: 100%; position: relative; display: flex; flex-direction: column; }
+        .carousel-slide img { width: 100%; height: 480px; object-fit: cover; display: block; }
+        .carousel-caption { background: rgba(30, 41, 59, 0.9); color: var(--white); padding: 15px 25px; font-size: 14px; text-align: center; font-family: 'Inter', sans-serif; }
+        .carousel-btn { position: absolute; top: 40%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.85); border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; font-size: 20px; color: var(--text-main); transition: all 0.2s; z-index: 10; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .carousel-btn:hover { background: var(--white); color: var(--verde-petroleo); scale: 1.05; }
+        .carousel-prev { left: 20px; }
+        .carousel-next { right: 20px; }
+        .news-meta { color: var(--text-sub); font-size: 14px; margin-bottom: 25px; display: flex; gap: 20px; font-weight: 600; }
+        .single-news-img { width: 100%; max-height: 450px; object-fit: cover; border-radius: 12px; margin: 25px 0; box-shadow: var(--shadow-card); }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo"><img src="../img/logo.png" alt="Logo AMDEF"></div>
+        <nav class="nav-menu">
+            <a href="../index.html#home">Início</a>
+            <a href="../index.html#sobre">A AMDEF</a>
+            <a href="../index.html#projetos">Projetos</a>
+            <a href="../index.html#beneficios">Benefícios</a>
+            <a href="curriculo.html">Banco de Currículos PcD</a>
+            <a href="../index.html#contato" class="btn-contact-menu">Contato</a>
+        </nav>
+    </header>
+
+    <main style="background-color: var(--bg-main); padding: 6px 0;">
+        <section class="section-padding">
+            <div class="creative-panel" style="max-width: 900px; padding: 60px;">
+                
+                <span class="card-badge">Fé & Inclusão</span>
+                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 800; color: var(--text-main); line-height: 1.2; margin: 15px 0;">Romaria PcD a Caravaggio: fé e afirmação da causa em pauta</h1>
+            
+                <br>    
+                
+
+                <p class="text-p" style="margin-bottom: 20px; font-size: 17px; color: #334155;">
+                    Desde 2023, a Associação Municipal de Deficientes Físicos de Farroupilha (AMDEF) coordena a Pré-Romaria das Pessoas com Deficiência ao Santuário de Caravaggio, em Farroupilha (RS). A comissão organizadora reúne as principais entidades dos municípios de Farroupilha e Caxias do Sul dedicadas ao universo PcD, prestando atendimento a mais de 900 pessoas e seus familiares.
+                </p>
+
+                <p class="text-p" style="margin-bottom: 30px; font-size: 17px; color: #334155;">
+                    A execução deste projeto envolve um planejamento rigoroso e o trabalho voluntário de dezenas de colaboradores. A preparação abrange desde a logística de saúde, segurança no trânsito e transporte acessível até a distribuição de alimentos e água, viabilizada por meio de parcerias com o poder público e patrocínios da iniciativa privada.
+                </p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-prev" onclick="moveSlide(-1)">❮</button>
+                    <button class="carousel-btn carousel-next" onclick="moveSlide(1)">❯</button>
+                    
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="../img/001.jpg" alt="Romaria PcD 001">
+                            <div class="carousel-caption">União e devoção marcam a trajetória dos romeiros em Farroupilha.</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../img/002.jpg" alt="Romaria PcD 002">
+                            <div class="carousel-caption">Comissão reunida no planejamento da infraestrutura de acessibilidade.</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../img/003.JPG" alt="Romaria PcD 003">
+                            <div class="carousel-caption">Voluntários e parceiros viabilizando pontos de apoio ao longo do trajeto.</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../img/004.jpeg" alt="Romaria PcD 004">
+                            <div class="carousel-caption">A força da comunidade PcD em caminhada rumo ao Santuário.</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../img/005.jpg" alt="Romaria PcD 005">
+                            <div class="carousel-caption">Momentos de emoção e superação na chegada à esplanada.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-p" style="margin-top: 30px; margin-bottom: 20px;">
+                    A iniciativa foi idealizada pelos casais Gilberto Adami e Maria Ester Rigo Adami, juntamente com Antonio Carlos Potrich e Ilma Neumann Potrich. Eles integram o Conselho Fundador da romaria ao lado do atual presidente da AMDEF e coordenador do evento, Giovani Antonio Capra.
+                </p>
+
+                <p class="text-p" style="margin-bottom: 30px;">
+                    O grupo lidera a comissão organizadora desde a primeira edição oficial da peregrinação, realizada em 22 de maio de 2022.
+                </p>
+
+                <img src="../img/006.jpg" class="single-news-img" alt="2ª Romaria das Pessoas com Deficiência">
+                <p class="text-p" style="font-size: 15px; text-align: center; color: var(--text-sub); margin-top: -15px; margin-bottom: 30px; font-style: italic;">
+                     Registro institucional: 2ª Romaria das Pessoas com Deficiência, realizada em 21 de maio de 2023.
+                </p>
+
+                <img src="../img/007.jpg" class="single-news-img" alt="3ª Romaria das Pessoas com Deficiência">
+                <p class="text-p" style="font-size: 15px; text-align: center; color: var(--text-sub); margin-top: -15px; margin-bottom: 30px; font-style: italic;">
+                    Consolidação do evento: 3ª Romaria das Pessoas com Deficiência, realizada em 17 de maio de 2025.
+                </p>
+
+                <div style="background: var(--bg-sections); padding: 30px; border-radius: 12px; border-left: 4px solid var(--verde-petroleo); margin-top: 40px;">
+                    <p class="text-p" style="color: var(--text-main); font-size: 16px;">
+                        Ao longo de sua trajetória, o evento enfrentou suspensões estratégicas em respeito a critérios de força maior. A edição de 2024 foi cancelada em solidariedade ao povo gaúcho diante da calamidade climática no Rio Grande do Sul. Já em 2026, a 4ª Romaria foi suspensa devido a readequações técnicas de segurança junto aos órgãos públicos. Tais decisões reiteram o compromisso da AMDEF com a excelência de um projeto planejado para ser um marco de fé, superação e, sobretudo, de afirmação institucional da causa PcD.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 AMDEF - Associação Municipal de Deficientes Físicos de Farroupilha - RS</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function moveSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            updateCarousel();
+        }
+    </script>
+</body>
+</html>

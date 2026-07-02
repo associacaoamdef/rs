@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>A AMDEF</title>
-
+    <title>A AMDEF - Quem Somos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-<header>
+    <header class="site-header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo AMDEF">
+        </div>
+        <nav class="nav-menu">
+            <a href="../index.html">HOME</a>
+            <a href="pag1.html" class="active">A AMDEF</a>
+            <a href="pag2.html">ROMARIA PCD</a>
+            <a href="pag3.html">CONSELHO</a>
+            <a href="pag4.html">PROJETOS</a>
+            <a href="pag5.html">BENEFÍCIOS</a>
+            <a href="contact.html" class="btn-contact-menu">CONTATO</a>
+        </nav>
+    </header>
 
-    <div class="logo">
-        <img src="../img/logo.png">
-    </div>
+    <main>
+        <!-- Banner Superior Unificado -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1>Quem Somos</h1>
+                <p>Conheça a história, a missão e o impacto da AMDEF na vida das pessoas com deficiência em Farroupilha.</p>
+            </div>
+        </section>
 
-    <nav>
-        <a href="../index.html">HOME</a>
-    </nav>
+        <!-- Bloco de Conteúdo Centralizado -->
+        <section class="news-section">
+            <div class="content-block-internal" style="max-width: 900px; margin: 0 auto;">
+                <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 100%;">
+                    
+                    <h2 style="font-family: 'Montserrat', sans-serif; color: #0b7775; margin-bottom: 20px;">Associação Municipal de Deficientes Físicos de Farroupilha</h2>
+                    
+                    <p style="margin-bottom: 20px; font-size: 16px; color: #2d3748; line-height: 1.8;">
+                        A entidade atua fortemente em ações de acessibilidade, inclusão e na incansável defesa dos direitos das pessoas com deficiência (PcD). Nosso objetivo é derrubar barreiras arquitetônicas e sociais, garantindo que cada indivíduo tenha plena autonomia e dignidade dentro da sociedade.
+                    </p>
 
-</header>
+                    <!-- Container para a foto de destaque da caminhada -->
+                    <div style="width: 100%; border-radius: 12px; overflow: hidden; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                        <img src="../img/foto1.jpg" alt="Caminhada de conscientização da AMDEF" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section class="content">
-
-    <h1>Quem Somos</h1>
-
-    <p>
-        Associação Municipal de Deficientes Físicos de Farroupilha.
-    </p>
-
-    <p>
-        A entidade atua em ações de acessibilidade, inclusão e defesa dos direitos das pessoas com deficiência.
-    </p>
-
-    <div class="image-grid">
-
-        <img src="../img/foto1.jpg">
-
-        <img src="../img/foto2.jpg">
-
-    </div>
-
-</section>
-
-<footer>
-    Associação Municipal de Deficientes Físicos de Farroupilha - RS
-</footer>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>© 2026 AMDEF - Associação Municipal de Deficientes Físicos de Farroupilha - RS</p>
+            <p class="footer-sub">Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>

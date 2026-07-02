@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contato</title>
-
+    <title>Contato - AMDEF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-<header>
+    <header class="site-header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo AMDEF">
+        </div>
+        <nav class="nav-menu">
+            <a href="../index.html">HOME</a>
+            <a href="pag1.html">A AMDEF</a>
+            <a href="pag2.html">ROMARIA PCD</a>
+            <a href="pag3.html">CONSELHO</a>
+            <a href="pag4.html">PROJETOS</a>
+            <a href="pag5.html">BENEFÍCIOS</a>
+            <a href="contact.html" class="btn-contact-menu active" style="background-color: var(--primary-hover);">CONTATO</a>
+        </nav>
+    </header>
 
-    <div class="logo">
-        <img src="../img/logo.png   ">
-    </div>
+    <main>
+        <!-- Banner Superior Unificado -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1>Contato</h1>
+                <p>Tem alguma dúvida, quer ser um parceiro voluntário ou precisa de apoio? Envie uma mensagem para a nossa equipe.</p>
+            </div>
+        </section>
 
-    <nav>
-        <a href="../index.html">HOME</a>
-    </nav>
+        <!-- Bloco do Formulário Centralizado -->
+        <section class="news-section">
+            <div class="content-block-internal" style="max-width: 600px; margin: 0 auto;">
+                <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 100%;">
+                    
+                    <h2 style="font-family: 'Montserrat', sans-serif; color: #0b7775; margin-bottom: 25px; text-align: center; font-size: 24px;">Fale Conosco</h2>
+                    
+                    <!-- Formulário estruturado em coluna (vertical) -->
+                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+                        
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--text-dark);">Nome Completo</label>
+                            <input type="text" placeholder="Digite seu nome" required style="width: 100%; padding: 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 15px; outline: none; transition: border-color 0.2s;">
+                        </div>
 
-</header>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--text-dark);">E-mail para Retorno</label>
+                            <input type="email" placeholder="seu-email@exemplo.com" required style="width: 100%; padding: 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 15px; outline: none; transition: border-color 0.2s;">
+                        </div>
 
-<section class="content">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--text-dark);">Sua Mensagem</label>
+                            <textarea rows="5" placeholder="Escreva aqui como podemos ajudar..." required style="width: 100%; padding: 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 15px; resize: vertical; outline: none; transition: border-color 0.2s;"></textarea>
+                        </div>
 
-    <h1>Contato</h1>
+                        <button type="submit" style="background-color: var(--primary-color); color: white; border: none; padding: 15px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; border-radius: 8px; cursor: pointer; transition: background-color 0.2s, transform 0.2s; margin-top: 10px;">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <form>
-
-        <input type="text" placeholder="Nome">
-
-        <input type="email" placeholder="E-mail">
-
-        <textarea rows="6" placeholder="Mensagem"></textarea>
-
-        <button>
-            Enviar
-        </button>
-
-    </form>
-
-</section>
-
-<footer>
-    Associação Municipal de Deficientes Físicos de Farroupilha - RS
-</footer>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>© 2026 AMDEF - Associação Municipal de Deficientes Físicos de Farroupilha - RS</p>
+            <p class="footer-sub">Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>

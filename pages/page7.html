@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodas comemoradas à altura: AMDEF celebra dez anos de fundação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        .carousel-container { max-width: 800px; margin: 40px auto; position: relative; overflow: hidden; border-radius: 16px; box-shadow: var(--shadow-card); background: #000; }
+        .carousel-track { display: flex; transition: transform 0.4s ease-in-out; }
+        .carousel-slide { min-width: 100%; position: relative; display: flex; flex-direction: column; }
+        .carousel-slide img { width: 100%; height: 480px; object-fit: cover; display: block; }
+        .carousel-caption { background: rgba(30, 41, 59, 0.9); color: var(--white); padding: 15px 25px; font-size: 14px; text-align: center; font-family: 'Inter', sans-serif; }
+        .carousel-btn { position: absolute; top: 40%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.85); border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; font-size: 20px; color: var(--text-main); transition: all 0.2s; z-index: 10; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .carousel-btn:hover { background: var(--white); color: var(--verde-petroleo); scale: 1.05; }
+        .carousel-prev { left: 20px; }
+        .carousel-next { right: 20px; }
+        .news-meta { color: var(--text-sub); font-size: 14px; margin-bottom: 25px; display: flex; gap: 20px; font-weight: 600; }
+        .single-news-img { width: 100%; max-height: 450px; object-fit: cover; border-radius: 12px; margin: 25px 0; box-shadow: var(--shadow-card); }
+        .colab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-top: 20px; }
+        .colab-item { background: var(--white); padding: 10px 15px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 13px; color: var(--text-main); }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo"><img src="../img/logo.png" alt="Logo AMDEF"></div>
+        <nav class="nav-menu">
+            <a href="../index.html#home">Início</a>
+            <a href="../index.html#sobre">A AMDEF</a>
+            <a href="../index.html#projetos">Projetos</a>
+            <a href="../index.html#beneficios">Benefícios</a>
+            <a href="curriculo.html">Banco de Currículos PcD</a>
+            <a href="../index.html#contato" class="btn-contact-menu">Contato</a>
+        </nav>
+    </header>
+
+    <main style="background-color: var(--bg-main); padding: 6px 0;">
+        <section class="section-padding">
+            <div class="creative-panel" style="max-width: 900px; padding: 60px;">
+                
+                <span class="card-badge">Celebração</span>
+                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 800; color: var(--text-main); line-height: 1.2; margin: 15px 0;">Bodas comemoradas à altura: AMDEF celebra dez anos de fundação</h1>
+                
+                <br>
+
+
+                <p class="text-p" style="margin-bottom: 20px; font-size: 17px; color: #334155;">
+                    Um marco na trajetória da Associação Municipal de Deficientes Físicos de Farroupilha foi a realização do almoço beneficente em comemoração aos dez anos da entidade. O evento reuniu mais de 150 pessoas no Restaurante Paladare, resultando em uma arrecadação líquida de R$ 7.341,80 — valor que superou as estimativas iniciais do conselho diretivo.
+                </p>
+
+                <p class="text-p" style="margin-bottom: 30px; font-size: 17px; color: #334155;">
+                    Além do expressivo resultado financeiro, a festividade consolidou o engajamento e o acolhimento da comunidade de Farroupilha junto à causa da acessibilidade. A programação contou com pronunciamentos institucionais, uma homenagem oficial ao fundador da associação, Andre Alberto Dorigon, e a presença de autoridades locais.
+                </p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-prev" onclick="moveSlide(-1)">❮</button>
+                    <button class="carousel-btn carousel-next" onclick="moveSlide(1)">❯</button>
+                    
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="../img/01.jpg" alt="Almoço Beneficente AMDEF - Registro 1">
+                            <div class="carousel-caption">Celebração de 10 anos: Evento reuniu mais de 150 pessoas no Restaurante Paladare.</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../img/02.jpg" alt="Almoço Beneficente AMDEF - Registro 2">
+                            <div class="carousel-caption">Sociedade farroupilhense unida em prol das iniciativas de acessibilidade da instituição.</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../img/03.jpg" alt="Organizadores da Confraternização - Registro 3">
+                            <div class="carousel-caption">Associados da AMDEF e familiares: parte do grupo coordenador que atuou na organização da confraternização.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <br> 
+                <br>
+
+                    
+                <div style="background: var(--bg-sections); padding: 40px; border-radius: 12px; border-top: 4px solid var(--verde-petroleo); margin-top: 40px;">
+    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 20px; color: var(--text-main); margin-bottom: 15px;">Parceiros e Colaboradores Institucionais</h3>
+    
+    <p class="text-p" style="font-size: 15px; color: var(--text-sub); margin-bottom: 25px; line-height: 1.6;">
+        A AMDEF expressa seu sincero agradecimento às empresas, famílias e voluntários que contribuíram diretamente com a doação de brindes e apoio logístico para a realização deste evento comemorativo:
+    </p>
+    
+    <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: var(--text-main); line-height: 2; text-align: justify; margin: 0;">
+        Armazém do Desvio <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Afavin <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Associação Randoncorp <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Bet Materiais Plásticos <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Charles Nichetti e Família <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Clip <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Clube Parque das Águas <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Cooperativa Vinícola São João <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Cópias & Cópias <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Direção Gestão Empresarial <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Dorigon Móveis e Decorações <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Drops de Menta <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Duda Cardoso <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Empório Nicoletti <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Fabiana Bertani e Grupo de Voluntários ‘As Andorinhas’ <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Farmácia Drofar <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Fideliza Multimarcas <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Jerônimo Duarte e Família <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Jornal ‘A Folheca’ <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Kidelizz <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Livraria Paraná <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Loja Pura Mania <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Lojas Benoit <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Lojas taQi <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Luis Herrmann e Família <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Maioli Assados e Cia <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Malharia Anselmi <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Manduka <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Márcia Tartarotti D’Ambros <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        MG Malhas <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Mix.com <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Odontoclínica <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Óptica Di Marco <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Posto Di Piano <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Que Útil <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Restaurante Santa Gula <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Restaurante Stefenon <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        RTV Serramar <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Saraiva Quantum <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        SB Malhas <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Solagri Máquinas e Produtos Agrícolas <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Stone Hall <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Strada Corretora de Seguros <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Stylo Placas <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Tudo 123 <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Vidroforte <span style="color: var(--verde-petroleo); font-weight: bold; margin: 0 8px;">•</span> 
+        Zêca e Família
+    </p>
+</div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 AMDEF - Associação Municipal de Deficientes Físicos de Farroupilha - RS</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function moveSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            updateCarousel();
+        }
+    </script>
+</body>
+</html>
